@@ -23,11 +23,11 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: cloudacademydevops/frontend:v11
+          image: anshul1224/k8s-voting-frontend:v2
           imagePullPolicy: Always
           env:
             - name: REACT_APP_APIHOSTPORT
-              value: $API_ELB_PUBLIC_FQDN #add your API_Load_Balancer DNS manually here if app does not run
+              value: http://k8s-assignme-api-40ca63e9dd-385caaf179178de3.elb.ap-south-1.amazonaws.com
           ports:
             - containerPort: 8080
           livenessProbe:
