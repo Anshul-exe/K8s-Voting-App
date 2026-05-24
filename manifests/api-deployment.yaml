@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: api
-  namespace: Assignment
+  namespace: assignment
   labels:
     role: api
     env: demo
@@ -53,4 +53,3 @@ spec:
             initialDelaySeconds: 5
             periodSeconds: 5
             successThreshold: 1
-

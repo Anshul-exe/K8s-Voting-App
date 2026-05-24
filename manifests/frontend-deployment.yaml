@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  namespace: Assignment
+  namespace: assignment
   labels:
     role: frontend
     env: demo
