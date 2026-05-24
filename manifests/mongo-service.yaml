@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongo
-  namespace: Assignment
+  namespace: assignment
   labels:
     role: db
     env: demo
@@ -13,4 +13,3 @@ spec:
   clusterIP: None
   selector:
     role: db
-
