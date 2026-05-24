@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>K8s Voting App</title>
+  </head>
+
+  <body>
+    <h1>Languages</h1>
+
+    <button onclick="loadData()">Load Languages</button>
+
+    <pre id="output"></pre>
+
+    <script>
+      async function loadData() {
+        const response = await fetch(
+          "http://k8s-assignme-api-40ca63e9dd-385caaf179178de3.elb.ap-south-1.amazonaws.com/languages",
+        );
+
+        const data = await response.json();
+
+        document.getElementById("output").textContent = JSON.stringify(
+          data,
+          null,
+          2,
+        );
+      }
+    </script>
+  </body>
+</html>
