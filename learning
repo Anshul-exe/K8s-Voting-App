@@ -1,13 +1,3 @@
-You basically debugged:
-
-IRSA
-OIDC federation
-EKS addons
-IAM trust relationships
-CSI architecture
-Kubernetes controller failures
-
-
 After completion what I learnt
 
 Amazon EKS cluster setup and management
@@ -41,3 +31,9 @@ Frontend-backend communication in Kubernetes
 Browser vs cluster networking concepts
 Basic distributed systems and microservice communication concepts
 Layered debugging methodology across infrastructure, networking, Kubernetes, and application layers
+IRSA
+OIDC federation
+EKS addons
+IAM trust relationships
+CSI architecture
+Kubernetes controller failures
